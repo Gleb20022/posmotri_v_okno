@@ -85,7 +85,7 @@ ol {
 .search-form__fieldset-title {
   margin-bottom: 5px;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
@@ -109,6 +109,10 @@ ol {
   text-decoration: underline;
 }
 
+.search-form__label:active .search-form__label-text {
+  text-decoration: none;
+}
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
@@ -122,7 +126,7 @@ ol {
   border-left: 0;
   padding: 2.5px 14px 2.5px 0;
   color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
@@ -180,7 +184,7 @@ ol {
   border: 1px solid #fff;
   padding: 6px 73.5px;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: normal;
@@ -203,6 +207,7 @@ ol {
 }
 
 .button:active {
+  text-decoration: none;
   background: #545050;
 }
 
@@ -217,7 +222,7 @@ ol {
 .title {
   margin-bottom: 24px;
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -230,13 +235,14 @@ ol {
 
 .content__list {
   position: relative;
-  height: 296px;
+  height: 298px;
   padding: 2px;
-  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
 .content__card-link {
@@ -259,6 +265,7 @@ ol {
 }
 
 .content__card-link:active {
+  text-decoration: none;
   background: #545050;
 }
 
@@ -268,8 +275,7 @@ ol {
 
 .content__video-card {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: start;
 }
 
@@ -279,8 +285,8 @@ ol {
 
 .content__video-card-title {
   margin-bottom: 6px;
-  padding: 2px;
-  font-family: Oswald;
+  padding: 3px;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -288,6 +294,7 @@ ol {
 }
 
 .content__video-card-description {
+  padding: 3px;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
