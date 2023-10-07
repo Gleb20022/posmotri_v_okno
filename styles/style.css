@@ -238,7 +238,7 @@ ol {
   position: relative;
   padding: 2px;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   block-size: 298px;
 }
 
@@ -283,6 +283,7 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  max-width: 200px;
 }
 
 .content__video-card-title {
